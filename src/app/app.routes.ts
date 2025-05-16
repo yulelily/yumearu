@@ -3,12 +3,18 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { LibComponent } from './lib/lib.component';
 import { UsrComponent } from './usr/usr.component';
+import { PostComponent } from './post/post.component';
 
 export const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
-    title: "Yumearu ~Otome Blog~"
+    title: "Otome Diary"
+  },
+  {
+    path: "post/:title",
+    component: PostComponent,
+    title: "Otome Diary"
   },
   {
     path: "lib",
@@ -23,6 +29,6 @@ export const routes: Routes = [
   {
     path: "**",
     component: ErrorComponent,
-    title: "404 Error"
+    title: "/dev/null"
   }
 ];

@@ -1,2 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+app-root {
+  @apply flex flex-col min-h-screen bg-[#3d3f40]
+}
+
+* {
+  font-family: Jost;
+}
+
+::selection {
+  @apply bg-rose-200 text-[#986274]
+}
+
+h1 {
+  @apply text-4xl selection:bg-indigo-200 selection:text-[#6471c0] my-[1rem]
+}
+
+h2 {
+  @apply text-3xl selection:bg-purple-200 selection:text-[#907ab4] my-[0.5rem]
+}
+
+h3 {
+  @apply text-2xl selection:bg-fuchsia-200 selection:text-[#bd75b8] my-[0.25rem]
+}
+
+p, div {
+  @apply text-xl
+}
