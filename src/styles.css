@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 app-root {
   @apply flex flex-col min-h-screen bg-[#3d3f40]
@@ -28,4 +28,8 @@ h3 {
 
 p, div {
   @apply text-xl
+}
+
+.button {
+  @apply outline-2 active:bg-sky-100 active:text-slate-600 px-[0.5rem] py-[2px]
 }

@@ -1,2 +1,15 @@
 <app-nav-bar></app-nav-bar>
-<app-content></app-content>
+<app-content>
+  <h1>There's nothing here!</h1>
+  <div>Accidental <strong>rm -rf</strong>? <button routerLink="/" class="button">cd ~</button></div> 
+  <div class="flex flex-col my-[2rem] gap-[2rem] w-max">
+    <p 
+    *ngFor="let item of items; let i = index"
+    [class.opacity-100]="visible"
+    class="transition-opacity opacity-0"
+    [ngStyle]="{'transition-delay': (i * 1000) + 'ms'}"
+    >
+    {{item}}
+  </p>
+  </div>
+</app-content>
