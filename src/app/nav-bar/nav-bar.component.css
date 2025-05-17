@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+button {
+  @apply px-[0.25rem] hover:bg-white
+}
+
+:host {
+  @apply text-black
+}
