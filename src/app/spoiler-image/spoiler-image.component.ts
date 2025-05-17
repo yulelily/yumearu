@@ -9,6 +9,7 @@ import { Component, input, signal } from '@angular/core';
 })
 export class SpoilerImageComponent {
  visible = signal(false);
+ majorSpoiler = input.required<boolean>();
  imgSrc = input.required<string>();
  tooltip = input.required<string>();
 }

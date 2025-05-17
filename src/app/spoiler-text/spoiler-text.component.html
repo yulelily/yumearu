@@ -1,2 +1,2 @@
-<span [ngClass]="{'hidden': visible()}">{{ `[${majorSpoiler() ? '‼' : '❕'} ${tooltip()}]`}}&nbsp;</span>
+<span class="text-sm text-[#88a3bb]" [ngClass]="{'hidden': visible()}">{{ `\<${majorSpoiler() ? '❗❗' : '❕'} ${tooltip()}\>`}}&nbsp;</span>
 <span [ngClass]="{'spoiler': !visible()}" (click)="visible.set(true)"><ng-content></ng-content></span>

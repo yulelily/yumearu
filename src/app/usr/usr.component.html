@@ -10,5 +10,5 @@
   <p><app-spoiler-text tooltip="double exclamation mark is a major spoiler, click to reveal" [majorSpoiler]="true">sample major spoiler text 😱</app-spoiler-text></p>
   <h3>Spoiler Image</h3>
   <p>Similarly to spoiler text, images will be tagged as such and display a warning with information on the spoiler beforehand. I will try and stick to only promotional images for CGs, but may include dialogue in the routes.</p>
-  <app-spoiler-image imgSrc="/Twitter_icon_sd_01.png" tooltip="Twitter Icon of Yves from Virche Evermore"></app-spoiler-image>
+  <app-spoiler-image [majorSpoiler]="false" imgSrc="/yumearu/Twitter_icon_sd_01.png" tooltip="Twitter Icon of Yves from Virche Evermore"></app-spoiler-image>
 </app-content>
