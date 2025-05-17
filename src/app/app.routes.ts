@@ -9,22 +9,22 @@ export const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
-    title: "Otome Diary"
+    title: "~/aru/Otome_Diary"
   },
   {
     path: "post/:title",
     component: PostComponent,
-    title: "Otome Diary"
+    title: "~/aru/Otome_Diary"
   },
   {
     path: "lib",
     component: LibComponent,
-    title: "Lib"
+    title: "/lib"
   },
   {
     path: "usr",
     component: UsrComponent,
-    title: "Usr"
+    title: "/usr"
   },
   {
     path: "**",
