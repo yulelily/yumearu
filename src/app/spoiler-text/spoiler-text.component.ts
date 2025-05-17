@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-spoiler-text',
@@ -9,4 +9,6 @@ import { Component, signal } from '@angular/core';
 })
 export class SpoilerTextComponent {
  visible = signal(false);
+ majorSpoiler = input.required<boolean>();
+ tooltip = input.required<string>();
 }

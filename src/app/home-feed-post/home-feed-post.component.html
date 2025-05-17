@@ -1,6 +1,6 @@
 <section class="flex flex-row items-center place-content-between gap-[1rem]">
-  <h2 [routerLink]="['/post/', post().titleId]" class="cursor-pointer link w-fit">{{ post().title }}</h2>
-  <div>
-    <p>{{ post().date | date: "shortDate" }}</p>
-  </div>
+  <a [routerLink]="['/post/', post().titleId]">
+    <h2 class="cursor-pointer link w-fit">{{ post().title }}</h2>
+  </a>
+  <p>{{ post().date | date: "shortDate" }}</p>
 </section>

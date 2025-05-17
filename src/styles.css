@@ -14,6 +14,10 @@ app-root {
   @apply bg-rose-200 text-[#986274]
 }
 
+.spoiler {
+  @apply brightness-0 bg-white inline-block w-fit cursor-pointer
+}
+
 h1 {
   @apply text-2xl selection:bg-indigo-200 selection:text-[#6471c0] my-[1rem]
 }

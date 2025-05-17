@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production --base-href 'https://yulelily.github.io/yumearu/'",
+    "deploy": "npx angular-cli-ghpagesn --dir=dist/yumearu/browser/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:yumearu": "node dist/yumearu/server/server.mjs"

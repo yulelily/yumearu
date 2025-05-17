@@ -3,4 +3,12 @@
   <h1>About</h1>
   <p>Hi! This is my otome game diary. I write about otome games that I've played, sometimes RPGs if I feel like it. There will be spoilers (tagged) and/or CGs (mostly from promotional material).</p>
   <p>I've played otome games for 3 years now. I got into otome during university and I've since graduated and work as a software engineer, so I'm able to fund my hobbies!!</p>
+  <h1>Spoilers</h1>
+  <h3>Spoiler Text</h3>
+  <p>Spoiler text will be tagged as such and display a warning with information on the spoiler beforehand.</p>
+  <p><app-spoiler-text tooltip="single exclamation mark is a minor spoiler, click to reveal" [majorSpoiler]="false">sample minor spoiler text 🤗</app-spoiler-text></p>
+  <p><app-spoiler-text tooltip="double exclamation mark is a major spoiler, click to reveal" [majorSpoiler]="true">sample major spoiler text 😱</app-spoiler-text></p>
+  <h3>Spoiler Image</h3>
+  <p>Similarly to spoiler text, images will be tagged as such and display a warning with information on the spoiler beforehand. I will try and stick to only promotional images for CGs, but may include dialogue in the routes.</p>
+  <app-spoiler-image imgSrc="/Twitter_icon_sd_01.png" tooltip="Twitter Icon of Yves from Virche Evermore"></app-spoiler-image>
 </app-content>

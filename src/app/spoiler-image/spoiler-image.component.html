@@ -1,1 +1,4 @@
-<img [src]="imgSrc()" class="w-fit" [ngClass]="{'brightness-0 bg-white inline-block w-fit cursor-pointer': !visible()}" (click)="visible.set(true)" />
+<div class="flex flex-col gap-[0.5rem] my-[1rem]">
+  <span>{{ `[${tooltip()}]`}}&nbsp;</span>
+  <img [src]="imgSrc()" class="w-fit" [ngClass]="{'spoiler': !visible()}" (click)="visible.set(true)" />
+</div>
