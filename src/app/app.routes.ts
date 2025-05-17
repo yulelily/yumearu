@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { LibComponent } from './lib/lib.component';
 import { UsrComponent } from './usr/usr.component';
-import { PostComponent } from './post/post.component';
+import { MyVowToMyLiegeComponent } from './posts/my-vow-to-my-liege/my-vow-to-my-liege.component';
 
 export const routes: Routes = [
   {
@@ -12,9 +12,9 @@ export const routes: Routes = [
     title: "~/aru/Otome_Diary"
   },
   {
-    path: "post/:title",
-    component: PostComponent,
-    title: "~/aru/Otome_Diary"
+    path: "post/my-vow-to-my-liege",
+    component: MyVowToMyLiegeComponent,
+    title: "~/aru/my_vow_to_my_liege"
   },
   {
     path: "lib",

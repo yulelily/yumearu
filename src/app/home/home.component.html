@@ -1,6 +1,4 @@
 <app-nav-bar></app-nav-bar>
 <app-content>
-  <div>Whereas disregard and contempt for human rights have resulted</div>
-  <app-spoiler-text>🥰🥰🥰 yay tagged spoilers!!!</app-spoiler-text>
-  <app-spoiler-image [imgSrc]="'/Twitter_icon_sd_01.png'"></app-spoiler-image>
+  <app-home-feed-post *ngFor="let post of homeFeedPosts" [post]="post"></app-home-feed-post>
 </app-content>

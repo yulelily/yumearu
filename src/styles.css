@@ -15,21 +15,25 @@ app-root {
 }
 
 h1 {
-  @apply text-4xl selection:bg-indigo-200 selection:text-[#6471c0] my-[1rem]
+  @apply text-2xl selection:bg-indigo-200 selection:text-[#6471c0] my-[1rem]
 }
 
 h2 {
-  @apply text-3xl selection:bg-purple-200 selection:text-[#907ab4] my-[0.5rem]
+  @apply text-xl selection:bg-purple-200 selection:text-[#907ab4] my-[0.5rem]
 }
 
 h3 {
-  @apply text-2xl selection:bg-fuchsia-200 selection:text-[#bd75b8] my-[0.25rem]
+  @apply text-lg selection:bg-fuchsia-200 selection:text-[#bd75b8] my-[0.25rem]
 }
 
-p, div {
-  @apply text-xl
+p {
+  @apply text-base
 }
 
 .button {
-  @apply outline-2 active:bg-sky-100 active:text-slate-600 px-[0.5rem] py-[2px]
+  @apply outline-2 hover:outline-sky-100 hover:text-sky-100 active:bg-sky-100 active:text-slate-600 px-[0.5rem] py-[2px]
+}
+
+.link {
+  @apply hover:text-[#6d5c78] hover:bg-purple-200
 }
